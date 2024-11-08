@@ -7,4 +7,9 @@
     <string name="send">Отправить</string>
     <string name="phone_number">Номер телефона</string>
     <string name="exit">Выход</string>
+    <string name="search_contact">Поиск контакта</string>
+    <string name="add_contact">Добавить</string>
+    <string name="phone">Телефон</string>
+    <string name="last_name">Фамилия</string>
+    <string name="name">Имя</string>
 </resources>

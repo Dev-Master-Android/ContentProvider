@@ -1,15 +1,14 @@
 package com.example.contentprovider
 
+import android.annotation.SuppressLint
+import com.example.contentprovider.databinding.ItemContactBinding
+import com.example.contentprovider.model.Contact
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.contentprovider.databinding.ItemContactBinding
-import com.example.contentprovider.model.Contact
-
-
 class ContactsAdapter(
-    private val contacts: List<Contact>,
+    private var contacts: List<Contact>,
     private val onContactAction: (Contact, Action) -> Unit
 ) : RecyclerView.Adapter<ContactsAdapter.ContactViewHolder>() {
 
@@ -36,4 +35,10 @@ class ContactsAdapter(
     }
 
     override fun getItemCount() = contacts.size
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun updateList(filteredContacts: List<Contact>) {
+        contacts = filteredContacts
+        notifyDataSetChanged()
+    }
 }
