@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Мои Контакты</string>
+    <string name="call">Позвонить</string>
+    <string name="message">Сообщение</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="enter_message">Введите сообщение</string>
+    <string name="send">Отправить</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="exit">Выход</string>
+</resources>
